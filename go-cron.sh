@@ -1,0 +1,2 @@
+#!/bin/sh
+exec go-cron "$SCHEDULE" /bin/sh -c "curl -sS $PARKLEITSYSTEM_PORT_8080_TCP_ADDR:$PARKLEITSYSTEM_PORT_8080_TCP_PORT"
